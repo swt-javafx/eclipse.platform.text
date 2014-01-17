@@ -485,7 +485,8 @@ public class LineNumberRulerColumn implements IVerticalRulerColumn {
 	 * @see IVerticalRuleColumnr#getWidth
 	 */
 	public int getWidth() {
-		return fIndentation[0];
+		//FIXME Temp JavaFX fix
+		return fIndentation == null ? 0 : fIndentation[0];
 	}
 
 	/**
